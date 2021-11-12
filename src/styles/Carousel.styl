@@ -1,0 +1,12 @@
+@import './Vars.styl'
+.Carousel
+    display flex
+    overflow-x scroll
+    overscroll-behavior-x contain
+    scroll-snap-type x proximity
+    gap: 20px
+    padding: 20px
+@media(min-width: 768px)
+    .Carousel
+        display grid
+        grid-template-columns repeat(auto-fill,minmax(280px,1fr))

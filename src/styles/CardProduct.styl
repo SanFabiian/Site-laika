@@ -1,0 +1,49 @@
+@import './Vars.styl'
+.Product
+    position relative
+    padding 20px
+    scroll-snap-align center
+    min-width 280px
+    border solid 1px #e1e1e1
+    border-radius 10px
+    padding-bottom 75px
+    button
+        position absolute
+        left 50%
+        transform translateX(-50%)
+        width 90%
+        bottom 20px
+.Product-img
+    width 100%
+    max-height 250px
+    object-fit contain
+.Product-name
+    font-size 20px
+    color #000
+    font-weight bold
+    margin 10px 0
+.weight-wrap
+    display flex
+    gap 10px
+    flex-wrap wrap
+.btn-weight
+    background  colorOne
+    color white
+    display flex
+    align-items center
+    justify-content center
+    border-radius 5px
+    padding 5px 10px
+.Product-price
+    font-size: 18px
+    font-weight bold
+    span
+        display inline-flex
+        flex-direction: column
+        margin-left: 10px
+        font-size: 12px
+        b
+            font-size: 14px
+            text-decoration: line-through
+.fa-star
+  color #ffb100

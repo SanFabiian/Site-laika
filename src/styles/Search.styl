@@ -1,0 +1,29 @@
+@import './Vars.styl'
+.Search
+    margin 1rem
+    display flex
+    align-items center
+    overflow hidden
+    height 40px
+    background white
+    border-radius 10px
+    input
+        width 100%
+        height 100%
+        border none
+        padding 0 10px
+    button
+        height 100%
+        border none
+        background white
+        color colorOne
+        padding 0 10px
+        font-size 1.5rem
+@media (min-width:768px)
+    .Search
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        margin: 0;
+        transform: translateX(-50%);
+        width: 400px;
